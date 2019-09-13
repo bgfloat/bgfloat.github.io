@@ -80,5 +80,5 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:bgfloat/bgfloat.github.io.git
-  branch: public
+  branch: master
 
