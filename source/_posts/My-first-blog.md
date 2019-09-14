@@ -8,5 +8,6 @@ tags:
 ## 学习网址
 git命令大全 https://www.jianshu.com/p/93318220cdce
 博客园npm https://www.cnblogs.com/john-sr/p/6036652.html
+搭建博客 http://xyua.top/Hexo/hexo_next_blog.html
 ## 致谢
 感谢朋友的关心
