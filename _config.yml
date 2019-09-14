@@ -4,11 +4,11 @@
 
 # Site
 title: Sun
-subtitle: 我的技术博客
-description: 技术博客，并发编程
+subtitle: 哀莫大于心死
+description: 普通人，技术博客
 keywords:
-author: 孙闻道
-language: 
+author: 孙文道
+language: zh-CN
 timezone:
 
 # URL
@@ -50,7 +50,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 5
   order_by: -date
   
 # Category & Tag
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -81,4 +81,36 @@ deploy:
   type: git
   repo: git@github.com:bgfloat/bgfloat.github.io.git
   branch: master
+
+# RSS订阅是设置
+plugin: hexo-generator-feed
+# Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+
+# 博客搜索功能配置
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# 文章推荐功能,需要安装插件
+recommended_posts:
+  server: https://api.truelaurel.com 
+# 后端推荐服务器地址
+  timeoutInMillis: 10000 
+# 服务时长，超过此时长，则使用离线推荐模式
+  internalLinks: 3 
+# 内部文章数量
+  externalLinks: 1 
+# 外部文章数量
+  fixedNumber: false
+  autoDisplay: false 
+# 自动在文章底部显示推荐文章
+  excludePattern: []
+  titleHtml: <h1>推荐文章</h1> 
+# 自定义标题
 
